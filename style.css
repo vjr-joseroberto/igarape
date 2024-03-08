@@ -312,7 +312,9 @@ footer {
     gap: 22rem;
     }
 
-
+    footer {
+        transform: scale(0.3);
+    }
 
 }
 
