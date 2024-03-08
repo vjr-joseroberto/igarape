@@ -306,16 +306,16 @@ footer {
 @media (max-width: 700px) {
     
     .gallery {
-        width: 75%;
+        width: 100%;
         margin-top: 32rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 22rem;
-        
     }
 
-    footer {
-        transform: scale(0.3);
+
+    header .left{
+        display: none;
     }
 
 }
