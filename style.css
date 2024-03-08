@@ -318,6 +318,16 @@ footer {
         display: none;
     }
 
+    .home1 {
+        padding: 20rem;
+        padding-left: 20rem;
+        min-width: 200rem;
+        min-height: 200rem;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+    }
+
 }
 
 /* home */
