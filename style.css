@@ -42,7 +42,7 @@ body {
 
 #app {
     display: grid;
-    grid-template-rows: max-content 1fr max-content;
+    grid-template-rows: max-content 1fr min-content;
             /*header main footer; manter o buscador*/
     height: 100vh;
 }
