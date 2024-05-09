@@ -11,6 +11,33 @@
     <link rel="shortcut icon" href="imagens/igarape-logo.jpeg">
     <title>Igarapé</title>
     <link rel="stylesheet" href="style.css">
+    <style> /* forço em ficar presa a imagem */
+        figcaption.details { 
+            width: 400px; /* Defina a largura desejada para o figcaption */
+            height: 200px; /* Defina a altura desejada para o figcaption */
+            overflow: hidden; /* Oculta qualquer conteúdo que transborda */
+        }
+        figcaption.details img {
+            width: 100%; /* Preenche a largura do figcaption */
+            height: auto; /* Mantém a proporção original da imagem */
+        } 
+        .home {
+            cursor: pointer;
+        }
+        .home1 {
+            border-radius: 20rem;
+        }
+        main {
+            width: 90%; 
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .home:hover {
+            border-radius: 20rem;
+            margin: 10rem;
+            border: 1px solid #32CD32; /* Adicione o estilo desejado */
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -20,10 +47,7 @@
                     class="avatar"
                     src="imagens/igarape-logo.jpeg" 
                     alt="Imagem Logomarca"
-                >
-
-
-                
+                >                
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -44,30 +68,46 @@
         </header>
     
         <main>
-            <nav class="home">
+            <nav class="home" onclick="redirectToPage('projeto3.html')">
                 <img class="home1"
-                    src="imagens/WhatsApp Image 2024-01-29 at 19.16.39.jpeg" 
-                    alt="imagem aleatoria e randomica"
+                    src="imagens/grupo.jpeg" 
+                    alt="imagem do projeto"
                 >
                 <figcaption class="details">
                     <h2 class="home-title">
-                        TITULO
+                        Terceiro Projeto
                     </h2>
                     <div class="tags">
                         <span class="home-p">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis fugiat officia quis ducimus ab quaerat ut voluptatibus iure, commodi eligendi quo corporis et ad placeat reiciendis quasi soluta necessitatibus?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum tenetur in id! Ut laudantium architecto voluptates deleniti veniam, debitis ad ratione perspiciatis magnam ea quasi, tempora autem corporis fugit?
                         </span>
                     </div>
                 </figcaption>
             </nav>
-            <nav class="home">
+            <nav class="home" onclick="redirectToPage('projeto2.html')">
                 <img class="home1"
-                    src="imagens/WhatsApp Image 2024-01-29 at 19.16.39.jpeg" 
+                    src="imagens/grupo.jpeg" 
                     alt="imagem aleatoria e randomica"
                 >
                 <figcaption class="details">
                     <h2 class="home-title">
-                        TITULO
+                        Segundo Projeto    
+                    </h2>
+                    <div class="tags">
+                        <span class="home-p">
+                            Retirada dos copos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta reiciendis error enim fuga unde temporibus nisi voluptate minima minus distinctio cum eveniet, pariatur ex beatae voluptas, consectetur necessitatibus asperiores exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit quam repellendus nesciunt nisi minus tempora maiores vitae maxime! Aut hic saepe autem consectetur tenetur, soluta accusantium harum explicabo exercitationem?
+                        </span> 
+                    </div>
+                </figcaption>
+            </nav>
+            <nav class="home" onclick="redirectToPage('projeto1.html')">
+                <img class="home1"
+                    src="imagens/VJR.jpeg" 
+                    alt="imagem do projeto"
+                >
+                <figcaption class="details">
+                    <h2 class="home-title">
+                        Primeiro Projeto
                     </h2>
                     <div class="tags">
                         <span class="home-p">
@@ -97,5 +137,11 @@
         nomodule 
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>

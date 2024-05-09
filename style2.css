@@ -1,0 +1,40 @@
+body, html {
+    overflow-x: hidden;
+}
+
+.imagem-responsiva {
+    max-width: 100%;
+    height: auto;
+}
+
+.single_meta_author_thumb_img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    overflow:hidden;
+    object-fit:cover;
+    border: 2px solid  hsl(117, 0%, 100%);
+}
+.avatar_projeto{
+    margin-left:10px;
+} @media screen and (max-width:768px){}
+.single_meta{
+    display:flex;justify-content:space-between;align-items:center;margin-top:15px;margin-bottom:15px;flex-wrap:wrap
+}@media screen and (max-width:768px){
+    .single_meta{margin-bottom:0};
+}
+article{
+    width: 90%; 
+    margin-right: auto;
+    margin-left: auto;
+}
+.image_top {
+    border-radius: 20rem;
+    border: 2px solid  hsl(117, 0%, 100%);
+}
+.legenda {
+    color: #A9A9A9;
+}
+figcaption {
+    margin-bottom: 15rem; /* Adiciona um espaço de 10 pixels entre a legenda da foto e o parágrafo subsequente */
+}
