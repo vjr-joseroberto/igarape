@@ -56,6 +56,7 @@ body {
 main {
     background-color: rgb(220, 241, 99);
     overflow-y: scroll;
+    overflow-x: hidden;
     /*somente o conteudo do main que tem rolagem
     header e footer estao travados, tem o "overflow-x: ;"*/
     background-color: var(--color-base-green-100);
@@ -64,7 +65,8 @@ main {
 li a {
     text-decoration: none;
     color: var(--color-base-green-300);
-    padding: 12rem 16rem;
+    padding: 8rem 8rem;
+    margin-bottom: 0.25rem;
 }
 
 li a:hover {
@@ -83,7 +85,7 @@ nav,
 nav ul {
     display: flex;
     align-items: center;
-    gap: 72rem;
+    gap: 40rem;
     font-weight: 700;
 }
 
@@ -96,10 +98,11 @@ nav ul {
     list-style: none;
     font-size: 18rem;
     color: var(--color-base-green-300);
+
 }
 
-li span {
-    margin-left: 10px;
+li.left {
+    margin-left: auto;
 }
 
 select {
@@ -214,12 +217,12 @@ CSS - Animation
 header {
     --startY: -100%;
     animation: move 0.2s;
-
 }
 
 footer {
     --startY: 100%;
     animation: move 0.2s;
+    box
 }
 
 
@@ -271,6 +274,7 @@ footer {
 }
   
 .dropdown-content {
+    top: 100%;
     display: none;
     position: absolute;
     background-color: #f9f9f9;

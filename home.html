@@ -1,0 +1,158 @@
+<!--
+escrito por: @vjr.joseroberto
+written by: @vjr.joseroberto
+Github: https://github.com/vjr-joseroberto
+Website: https://vjr-joseroberto.github.io/Links-perfil/
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/igarape-logo.jpeg">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="style.css">
+    <style> /* forço em ficar presa a imagem */
+        figcaption.details { 
+            width: 400rem; /* Defina a largura desejada para o figcaption */
+            height: 200rem; /* Defina a altura desejada para o figcaption */
+            overflow: hidden; /* Oculta qualquer conteúdo que transborda */
+            border-radius: 20rem;
+        }
+        figcaption.details img {
+            width: 100%; /* Preenche a largura do figcaption */
+            height: auto; /* Mantém a proporção original da imagem */
+        } 
+        .home {
+            cursor: pointer;
+        }
+        .home1 {
+            border-radius: 20rem;
+        }
+        main {
+            width: 95%; 
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .home:hover {
+            border-radius: 20rem;
+            margin: 10rem;
+            border: 1px solid #32CD32; /* Adicione o estilo desejado */
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header class="container">
+            <nav>
+                <img 
+                    class="avatar"
+                    src="imagens/igarape-logo.jpeg" 
+                    alt="Imagem Logomarca"
+                >                
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Time</button>
+                        <div class="dropdown-content">
+                          <a href="ADM.html">Administrativo</a>
+                          <a href="MKT.html">Marketing</a>
+                          <a href="PES.html">Pessoas</a>
+                        </div>
+                    </div>
+                    <li>
+                        <a href="home.html">Projetos</a>
+                    </li>
+                    <li class="left">
+                        <span>#Eu cuido do meio ambiente</span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <nav class="home" onclick="redirectToPage('Projeto3.html')">
+                <img class="home1"
+                    src="imagens/grupo1.jpeg" 
+                    alt="imagem do projeto"
+                >
+                <figcaption class="details">
+                    <h2 class="home-title">
+                        Terceiro Projeto
+                    </h2>
+                    <div class="tags">
+                        <span class="home-p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum tenetur in id! Ut laudantium architecto voluptates deleniti veniam, debitis ad ratione perspiciatis magnam ea quasi, tempora autem corporis fugit?
+                        </span>
+                    </div>
+                </figcaption>
+            </nav>
+            <nav class="home" onclick="redirectToPage('Projeto2.html')">
+                <img class="home1"
+                    src="imagens/grupo1.jpeg" 
+                    alt="imagem aleatoria e randomica"
+                >
+                <figcaption class="details">
+                    <h2 class="home-title">
+                        Segundo Projeto    
+                    </h2>
+                    <div class="tags">
+                        <span class="home-p">
+                            Retirada dos copos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta reiciendis error enim fuga unde temporibus nisi voluptate minima minus distinctio cum eveniet, pariatur ex beatae voluptas, consectetur necessitatibus asperiores exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit quam repellendus nesciunt nisi minus tempora maiores vitae maxime! Aut hic saepe autem consectetur tenetur, soluta accusantium harum explicabo exercitationem?
+                        </span> 
+                    </div>
+                </figcaption>
+            </nav>
+            <nav class="home" onclick="redirectToPage('Projeto1.html')">
+                <img class="home1"
+                    src="imagens/VJR.jpeg" 
+                    alt="imagem do projeto"
+                >
+                <figcaption class="details">
+                    <h2 class="home-title">
+                        Primeiro Projeto
+                    </h2>
+                    <div class="tags">
+                        <span class="home-p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum tenetur in id! Ut laudantium architecto voluptates deleniti veniam, debitis ad ratione perspiciatis magnam ea quasi, tempora autem corporis fugit?
+                        </span>
+                    </div>
+                </figcaption>
+            </nav>
+        </main>
+        
+        <footer class="container">
+            <div id="social-links">
+                <a href="https://www.instagram.com/igarape_unicamp?igsh=ZHgwY2V3bnVqd2Ex" rel="noopener" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://vjr-joseroberto.github.io/Links-perfil/" rel="noopener" target="_blank">
+                    <ion-icon name="code-working-outline"></ion-icon>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script 
+        type="module" 
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script 
+        nomodule 
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

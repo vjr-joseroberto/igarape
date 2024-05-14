@@ -38,3 +38,7 @@ article{
 figcaption {
     margin-bottom: 15rem; /* Adiciona um espaço de 10 pixels entre a legenda da foto e o parágrafo subsequente */
 }
+
+.single_title {
+    text-align: center;
+}

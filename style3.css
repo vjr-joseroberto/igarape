@@ -1,0 +1,59 @@
+
+p, h1{
+    color: hsl(117, 34%, 41%);
+}
+
+.carousel {
+    position: relative;
+    width: 100%; /* Ajusta-se à largura da tela */
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    border: 2px solid black; /* Define uma borda preta de 2 pixels */
+    padding: 5px; /* Adiciona um espaçamento interno para a borda */
+}
+
+.carousel-images img {
+    width: 100%; /* Imagens responsivas */
+    height: auto; /* Mantém a proporção da imagem */
+    display: none;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.three-points {
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.three-points button {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    margin: 0 5rem;
+    cursor: pointer;
+}
+
+.three-points button.active {
+    background-color: black;
+}
+
+h1 {
+    padding: 12rem;
+    text-align: center;
+}
+
+p {
+    padding: 8rem;
+    text-indent: +20rem;
+}
